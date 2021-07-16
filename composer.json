@@ -1,0 +1,22 @@
+{
+    "name": "edson/funcionalidades-santoro-studio",
+    "description": "Prov\u0000 funcionalidades extras para o WooCommerce",
+    "type": "wordpress-plugin",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Santoro",
+            "email": "edsonsantoro@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "wpackagist-plugin/woocommerce": "5.0"
+    },
+    "repositories": {
+        "wpackagist": {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    }
+}
