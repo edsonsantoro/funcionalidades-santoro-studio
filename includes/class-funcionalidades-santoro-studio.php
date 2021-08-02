@@ -119,8 +119,15 @@ class Funcionalidades_Santoro_Studio {
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
+		 * 
+		 * @TODO not done yet.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-funcionalidades-santoro-studio-public.php';
+		//require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-funcionalidades-santoro-studio-public.php';
+
+		/**
+		 * The class responsible for the plugin settings page
+		 */
+		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/partials/funcionalidades-santoro-studio-admin-display.php';
 
 		$this->loader = new Funcionalidades_Santoro_Studio_Loader();
 
@@ -194,7 +201,7 @@ class Funcionalidades_Santoro_Studio {
 
 		//$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		//$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-		$this->loader->add_action( 'woocommerce_checkout_process', $plugin_admin, 'sds_update_customer_for_public_orders', 10, 1 );
+		$this->loader->add_action( 'woocommerce_checkout_process', $plugin_public, 'sds_update_customer_for_public_orders', 10, 1 );
 		
 
 	}

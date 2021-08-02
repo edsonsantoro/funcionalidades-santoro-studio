@@ -115,6 +115,7 @@ class Funcionalidades_Santoro_Studio_Admin
 			return;
 		}
 
+		//$order = new Wc_Order();
 		$order = wc_get_order($post_id);
 
 		// Se o pedido foi criado manualmente, vamos reduzir o estoque.
